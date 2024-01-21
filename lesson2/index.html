@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="elem">
+      <img src="photo.png" alt="photo" />
+      <div class="content">
+        <h2 class="heading">Lorem, ipsum dolor.</h2>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae,
+          ea!
+        </p>
+      </div>
+    </div> -->
+    <!-- <div class="item">
+      <div class="elem">
+        <div class="info">
+          <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+        </div>
+      </div>
+    </div> -->
+    <form action="#">
+      <input type="text" />
+      <button class="btn">Отправить</button>
+    </form>
+    <script>
+
+    const inp = document.querySelector('input')
+    const btn = document.querySelector('.btn')
+    console.log(btn);
+    const text = document.createElement('h2')
+    text.textContent = 'вы не заполнили поле ввода'
+    btn.onclick = function () {
+        if (inp.value === '') {
+            console.log(text);
+            btn.parentElement.parentElement.append(text)
+            inp.style.borderColor = 'red'
+        }
+    }
+
+      // const subtitle = document.querySelector('.subtitle')
+      // const el = document.querySelector('.elem')
+      // const btn = document.createElement('button')
+      // let text = document.createElement('p')
+      // btn.textContent = 'button'
+      // el.append(btn)
+      // btn.onclick = function () {
+      //     let elem = subtitle.parentElement
+      // while (elem !== null) {
+      //     text.textContent = elem
+      //     el.append(text)
+      //     elem = elem.parentElement
+
+      // }
+      // }
+      // let elem = subtitle.parentElement
+      // while (elem !== null) {
+      //     console.log(elem);
+      //     elem = elem.parentElement
+
+      // }
+      // const block = document.querySelector('.block')
+      // const divEl = document.createElement('div')
+      // divEl.setAttribute('class', 'item item_1')
+      // divEl.textContent = 'Элемент внутри'
+      // block.append(divEl)
+      // divEl.style.color = 'blue'
+      // divEl.style.border = '1px solid black'
+      // divEl.style.borderColor = '#f8f8f8'
+      // divEl.style.padding = '16px'
+
+      // console.log(block);
+
+      //   const textEl = document.querySelector(".text");
+      //   console.log(textEl);
+      //   console.log(textEl.previousElementSibling);
+      //   console.log(textEl.parentElement);
+      //   console.log(textEl.parentElement.previousElementSibling);
+      //   console.log(textEl.parentElement.parentElement);
+    </script>
+  </body>
+</html>

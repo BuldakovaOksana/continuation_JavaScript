@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="block">
+      <p>1</p>
+      <p>2</p>
+    </div>
+    <p class="www">text 1</p>
+    <p class="www">text 2</p>
+    <a class="link" href="#">link text html</a>
+    <img class="photo" src="" alt="" />
+    <div class="content"></div>
+
+    <script>
+      // const elrmDiv = document.querySelector('p')
+      const elrmDiv = document.querySelector("#block p:first-child");
+      console.log(elrmDiv);
+      const elemP = document.querySelector(".www");
+      console.log(elemP);
+      const link = document.querySelector(".link");
+      link.textContent = "link text js";
+      link.href = "https://developer.mozilla.org/ru/";
+      console.log(link);
+      const elImg = document.querySelector(".photo");
+      elImg.src = "legion_game_shop.ico";
+      console.log(elImg);
+      elImg.onclick = function () {
+        elImg.src = "tomato-cheese.jpg";
+      };
+      console.log(elImg);
+
+      const content = document.querySelector(".content");
+      const title = document.createElement("h1");
+      const elP = document.createElement("p");
+      elP.textContent = "Новый текстовый элемент";
+      title.textContent = "hhhhhhh";
+      content.append(elP);
+      content.append(title);
+      console.log(content);
+      // elP.remove()
+      // console.log(content);
+      const btn = document.createElement('button')
+      btn.textContent = 'button'
+      content.append(btn)
+      let count = 0
+      btn.onclick = function () {
+        count++;
+        btn.textContent = 'Вы нажали на кнопку ' + count
+        title.textContent = 'Вы нажали на кнопку ' + count
+      };
+      
+      console.log(content);
+    </script>
+  </body>
+</html>
