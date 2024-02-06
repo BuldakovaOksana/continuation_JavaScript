@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson5</title>
+    <script src=""></script>
+  </head>
+  <body>
+    <div class="content"></div>
+
+    <script src="data.js"></script>
+    <script>
+      const data = JSON.parse(dataInfo);
+      console.log(data);
+
+      const content = document.querySelector(".content");
+
+      data.forEach((element) => {
+        const contains = document.createElement("div");
+        contains.classList.add("contain");
+
+        const name = document.createElement("h2");
+        name.classList.add("title");
+        name.textContent = element.API;
+
+        const description = document.createElement("p");
+        description.classList.add("description");
+        description.textContent = element.Description;
+
+        const auth = document.createElement("p");
+        auth.classList.add("auth");
+        auth.textContent = element.Auth;
+
+        const link = document.createElement("a");
+        link.classList.add("link");
+        link.href = data.Link;
+        link.textContent = element.Link;
+
+        const category = document.createElement("p");
+        category.classList.add("category");
+        category.textContent = element.Category;
+        contains.append(name);
+        contains.append(description);
+        contains.append(auth);
+        contains.append(link);
+        contains.append(category);
+        content.append(contains);
+        console.log(content);
+      });
+    </script>
+  </body>
+</html>
