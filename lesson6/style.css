@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 700px);
+  padding-right: calc(50% - 700px);
+}
+
+.products {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 319px;
+  margin-left: 230px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+  max-width: 652px;
+}
+.product__content {
+  background: rgb(255, 255, 255);
+  width: 350px;
+  padding-left: 31px;
+  padding-top: 22px;
+}
+.product__name {
+  color: rgb(34, 34, 34);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 262px;
+  padding-bottom: 42px;
+  display: block;
+}
+.product__price {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(87, 87, 87);
+  padding-bottom: 6px;
+}
+.product__price__span, .product__price__currency {
+  color: rgb(239, 91, 112);
+}
+.product__color {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(87, 87, 87);
+  padding-bottom: 6px;
+}
+.product__color__span {
+  color: rgb(111, 110, 110);
+}
+.product__size {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(87, 87, 87);
+  padding-bottom: 6px;
+}
+.product__size__span {
+  color: rgb(111, 110, 110);
+}
+.product__quantity {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(87, 87, 87);
+}
+.product .quantity {
+  max-width: 43.19px;
+  height: 24.12px;
+  border: 1px solid rgb(234, 234, 234);
+  margin-left: 24px;
+  padding-left: 16px;
+}
+.product .vector {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: rgb(255, 255, 255);
+  margin-top: 28px;
+  margin-left: 57px;
+  margin-right: 22px;
+}/*# sourceMappingURL=style.css.map */

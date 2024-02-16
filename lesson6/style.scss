@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.center {
+  padding-left: calc(50% - 1400px / 2);
+  padding-right: calc(50% - 1400px / 2);
+}
+
+.products {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 319px;
+  margin-left: 230px;
+}
+
+.product {
+    
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+    max-width: 652px;
+
+  &__content {
+    background: rgb(255, 255, 255);
+    width: 350px;
+    padding-left: 31px;
+    padding-top: 22px;
+  }
+  &__name {
+    color: rgb(34, 34, 34);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 262px;
+    padding-bottom: 42px;
+    display: block;
+  }
+
+  &__price {
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(87, 87, 87);
+    padding-bottom: 6px;
+    &__span, &__currency {
+        color: rgb(239, 91, 112); 
+    }
+  }
+
+  &__color {
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(87, 87, 87);
+    padding-bottom: 6px;
+    &__span {
+        color: rgb(111, 110, 110);
+    }
+  }
+
+  &__size {
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(87, 87, 87);
+    padding-bottom: 6px;
+    &__span {
+        color: rgb(111, 110, 110);
+    }
+  }
+
+  &__quantity {
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(87, 87, 87);
+    
+  }
+
+  .quantity {
+    max-width:  43.19px;
+    height: 24.12px;
+    border: 1px solid rgb(234, 234, 234);
+    margin-left: 24px;
+    padding-left: 16px;
+    
+  }
+
+
+
+  .vector {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: rgb(255, 255, 255);
+    margin-top: 28px;
+    margin-left: 57px;
+    margin-right: 22px;
+    
+  }
+}
