@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>lesson7</title>
+  </head>
+  <body>
+    <div class="video__box center">
+      <video
+        class="video"
+        src="img/2588138_Suitcase_Luggage_Packing_1920x1080.mp4"
+      ></video>
+    </div>
+    <div class="btn__box">
+      <div class="timing__box">
+        
+        <input class="timing" value="0" step="0.001" type="range" />
+        <div class="curtime">0</div>
+      </div>
+      <button class="play btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.99 11.7773C22.9219 10.8388 22.4205 9.92777 21.4859 9.39398L7.48782 1.39936C5.48785 0.25713 3 1.70127 3 4.00443V19.9937C3 22.2968 5.48785 23.741 7.48781 22.5988L21.4859 14.6041C22.4205 14.0703 22.9219 13.1593 22.99 12.2208C23.0226 12.0751 23.0226 11.9231 22.99 11.7773Z" fill="white"/>
+        </svg>
+            
+      </button>
+      <button class="pause btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.2857 3.11111C14.2857 2.49746 14.7974 2 15.4286 2H18.8571C19.4883 2 20 2.49746 20 3.11111V20.8889C20 21.5025 19.4883 22 18.8571 22H15.4286C14.7974 22 14.2857 21.5025 14.2857 20.8889V3.11111Z" fill="white"/>
+            <path d="M4 3.11111C4 2.49746 4.51167 2 5.14286 2H8.57143C9.20261 2 9.71429 2.49746 9.71429 3.11111V20.8889C9.71429 21.5025 9.20261 22 8.57143 22H5.14286C4.51167 22 4 21.5025 4 20.8889V3.11111Z" fill="white"/>
+            </svg>
+            
+      </button>
+      <input class="volume" min="0" max="1" step="0.01" type="range" />
+    </div>
+    <script>
+      const videoEl = document.querySelector(".video");
+      const playEl = document.querySelector(".play");
+      const pauseEl = document.querySelector(".pause");
+      const timingEl = document.querySelector(".timing");
+      const volumeEl = document.querySelector(".volume");
+      const curtimeEl = document.querySelector(".curtime");
+
+      playEl.addEventListener("click", function (e) {
+        videoEl.play();
+      });
+
+      pauseEl.addEventListener("click", function (e) {
+        videoEl.pause();
+      });
+      
+      videoEl.addEventListener('timeupdate', function (e) {
+        curtimeEl.innerText = videoEl.currentTime
+        timingEl.value = videoEl.currentTime / videoEl.duration * 100
+      });
+
+      videoEl.addEventListener('input', function (e) {
+        videoEl.volume = volumeEl.value
+      });
+    </script>
+  </body>
+</html>

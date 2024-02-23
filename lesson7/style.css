@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 700px);
+  padding-right: calc(50% - 700px);
+}
+
+.video__box {
+  margin-top: 80px;
+}
+
+.timing {
+  width: 1000px;
+}
+
+.video {
+  max-width: 1200px;
+  border-radius: 10%;
+  position: relative;
+}
+
+.btn__box {
+  position: absolute;
+  max-width: 1100px;
+  top: 680px;
+  left: 70px;
+}
+
+.btn {
+  background-color: none;
+}
+
+.timing__box {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
